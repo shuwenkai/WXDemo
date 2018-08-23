@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/product/sofa/sofa",
+    "pages/product/dic/pic",
+    "pages/product/foot/foot",
+    "pages/product/light/light",
+    "pages/user/user",
+    "pages/user/address/list/list",
+    "pages/user/address/add/add",
+    "pages/user/address/edit/edit",
+    "pages/product/pro/pro",
+    "pages/cart/cart",
+    "pages/about/about",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Tao家居网上商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/icon/shouye1.png",
+        "iconPath": "image/icon/shouye.png",
+        "pagePath": "pages/homePage/homePage",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/icon/gouwu1.png",
+        "iconPath": "image/icon/gouwu.png",
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "image/icon/user1.png",
+        "iconPath": "image/icon/user.png",
+        "pagePath": "pages/user/user",
+        "text": "用户"
+      }
+    ]
+  }
+}

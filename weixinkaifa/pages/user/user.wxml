@@ -1,0 +1,45 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+
+<!-- 获取用户信息 -->
+	<view  bindtap="bindViewTap" class="userinfo">
+		<image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover" mode='cover'></image>
+		<text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+	</view>
+
+  <!-- 个人中心列表 -->
+	<view class="info_list">
+
+		<view class="weui-cells">
+			<navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ items }}" wx:key="" data-path="{{ item.path }}" data-index="{{ index }}" bindtap="navigateTo">
+               <!-- 字体图标 -->
+                <view class="weui-cell__hd">
+                    <image src="{{ item.icon }}" class='myicon'></image>
+                </view>
+                <!-- 标题 -->
+                <view class="weui-cell__bd">{{ item.text }}</view>
+                <!-- 右侧箭头 -->
+                <view class="weui-cell__ft weui-cell__ft_in-access">
+                	<text wx:if="{{ index === 2 }}">{{ item.path }}</text>
+                </view>
+            </navigator>
+        </view>
+
+
+
+        <view class="weui-cells">
+            <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ settings }}" wx:key="" data-path="{{ item.path }}" data-index="{{ index }}" bindtap="bindtap">
+                <view class="weui-cell__hd">
+                    <image src="{{ item.icon }}" class='myicon'></image>
+                </view>
+                <view class="weui-cell__bd">{{ item.text }}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">
+                    <text wx:if="{{ index === 0 }}">{{ item.path }}</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+
+    <view class="logout" bindtap="logout">登出账号</view>
+</view>

@@ -1,0 +1,8 @@
+<template  name="nav">
+<view class='navCss'>
+<navigator url='../product/sofa/sofa'>沙发</navigator>
+<navigator url='../product/dic/pic'>地毯</navigator>
+<navigator url='../product/foot/foot'>饰品</navigator>
+<navigator url='../product/light/light'>灯具</navigator>
+</view>
+</template>

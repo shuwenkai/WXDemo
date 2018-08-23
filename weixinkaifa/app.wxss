@@ -1,0 +1,29 @@
+/**app.wxss**/
+@import 'assets/styles/weui.wxss';
+@import 'assets/styles/prompt.wxss';
+@import 'assets/styles/skyvow.wxss';
+
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 774370 */
+  src: url('//at.alicdn.com/t/font_774370_x7bxb70b1j.eot');
+  src: url('//at.alicdn.com/t/font_774370_x7bxb70b1j.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_774370_x7bxb70b1j.woff') format('woff'),
+  url('//at.alicdn.com/t/font_774370_x7bxb70b1j.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_774370_x7bxb70b1j.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:60rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-caigou:before{content: '\e888';}
+/* .icon-user:before{content: '\e8c9';}
+.icon-user2:before{content: '\e8c8';}
+.icon-home2:before{content: '\e8ba';}
+.icon-home:before{content: '\e8b9';}
+.icon-home2:before{content: '\e8b8';} */
+.icon-caigou2:before{content: '\e887';}

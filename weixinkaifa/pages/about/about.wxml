@@ -1,0 +1,12 @@
+<!--pages/about/about.wxml-->
+<view class="about">
+	<view class="about-item">
+		<text class="about-item-title">关于项目</text>
+		<text class="about-item-content">微信小程序-Tao商城前台</text>
+    <text>作者：舒文凯</text>
+	</view>
+	<view class="about-item">
+		<text class="about-item-title">当前版本</text>
+		<text class="about-item-content ">v1.0 Beta</text>
+	</view>
+</view>

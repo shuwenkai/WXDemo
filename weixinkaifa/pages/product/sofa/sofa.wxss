@@ -1,0 +1,46 @@
+/* pages/product/sofa/sofa.wxss */
+.banner{
+  width: 98%;
+  margin-left:1%; 
+}
+.navCss{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: spacew-around;
+  font-size: 30rpx;
+}
+.mypic{
+  /* outline: 1px solid blue; */
+  width: 150rpx;
+  height: 120rpx;
+}
+.protitle{
+  width: 50%;
+  margin: auto 3rpx;
+}
+.price{
+  height: 100%;
+  margin: 0 3rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.proprice{
+  width: 100%;
+}
+.icon-caigou{
+  margin:0 auto;
+}
+.product{
+  width: 100%;
+  height: 120rpx;
+  margin: 10rpx;
+  /* outline: 1px solid red; */
+  font-size: 30rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around
+}
+.listproduct{
+  width: 100%;
+  height: 64vh;
+}

@@ -1,0 +1,8 @@
+<template name="product">
+<view>
+<image src='{{prosrc}}'></image>
+<text>{{protitle}}</text>
+<text>{{proprice}}</text>
+<text><icon class="iconfont icon-zhiding"></icon></text>
+</view>
+</template>

@@ -1,0 +1,45 @@
+/* pages/homePage/homePage.wxss */
+.navCss{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+.search{
+  padding:0 5rpx;
+  margin: 5rpx 0;
+  font-size: 30rpx;
+}
+.search input{
+background-color:#ddd ;
+border-radius: 20rpx
+}
+.slide-image{
+  width: 100%;
+}
+.headerJingxuan{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.jingxuanbiaoti{
+  margin-top: 20rpx;
+  display: inline-block;
+  font-size: 1em;
+}
+.jingxuansec{
+  margin: 30rpx 10rpx;
+  width: 97%;
+  background-color: #fff;
+box-shadow:0px 1px 2px 2px silver;
+}
+.jingxuansec image{
+  width: 100%;
+}
+.jingxuansec text{
+  display: inline-block;
+}
+.weui-icon-search, 
+.weui-search-bar__text {
+    vertical-align: inherit;
+}

@@ -1,0 +1,16 @@
+<!--pages/product/sofa/sofa.wxml-->
+<!-- <text>pages/product/sofa/sofa.wxml</text> -->
+<image src='http://localhost:8888/img/index/index-room1.jpg' class='banner' mode='widthFix'></image>
+
+<scroll-view scroll-y class='listproduct'>
+<view class='product' wx:for='{{product}}' bindtap='topro' data-id='{{item.id}}' data-cla='sofa_tao'>
+<image src='http://localhost:8888{{item.tao_img}}' mode='scaleToFill' class='mypic'></image>
+<text class='protitle'>{{item.tao_caizhi}}</text>
+<view class='price'>
+<text class='proprice'>￥{{item.tao_price}}</text>
+<icon class="iconfont icon-caigou" catchtap='addCart' data-id='{{item.id}}'></icon>
+</view>
+</view>
+</scroll-view>
+
+

@@ -1,0 +1,21 @@
+<!--pages/product/pro/pro.wxml-->
+<view class="container">
+<!-- 商品图片bannner -->
+    <view class="swiper-container">
+      <image src="http://localhost:8888{{ goods.tao_img }}" class="slide-image" bindtap="previewImage" />
+    </view>
+    <!-- 商品详情 -->
+    <view class="shopping-container">
+        <view class="name">{{ goods.tao_title}}</view>
+        <view class="price">¥ {{ goods.tao_price}}</view>
+        <view class="remark">{{ goods.tao_caizhi}}</view>
+        <view class="remark">{{ goods.tao_caizhi2}}</view>
+        <text class="remark">{{ goods.tao_guige}}</text>
+    </view>
+
+    <!-- 加入购物车按钮 -->
+    <view class="btn-plus" bindtap="addCart">
+        <image class="icon" src="../../../../image/icon/iconfont-plus-circle.png" />
+        <text>加入购物车</text>
+    </view>
+</view>

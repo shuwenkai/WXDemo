@@ -1,0 +1,55 @@
+<!-- 主页面-->
+
+<import src="../model/nav.wxml" /> <!-- 引入导航条 -->
+<!-- 搜索商品 -->
+<view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="搜索"/>
+        </view>
+        <label class="weui-search-bar__label" bindtap="search">
+            <icon class="weui-icon-search" type="search" size="14"></icon>
+            <view class="weui-search-bar__text">搜索</view>
+        </label>
+    </view>
+</view>
+
+<template is="nav"/> <!-- 使用导航条 -->
+
+<!-- 使用轮播 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" 
+  circular="{{circular}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 精选商城 -->
+<view class='jingxuan'>
+
+<view class='headerJingxuan'>
+<text class='jingxuanbiaoti'>精选推荐</text>
+<!-- <text>热卖商品随心挑选</text> -->
+</view>
+
+<view class='jingxuansec'>
+<image src="{{jingxuan}}" mode='scaleToFill'/>
+<text>精选文字说明</text>
+</view>
+
+<view class='jingxuansec'>
+<image src="{{jingxuan1}}" mode='scaleToFill'/>
+<text>精选文字说明</text>
+</view>
+
+<view class='jingxuansec'>
+<image src="{{jingxuan2}}" mode='scaleToFill'/>
+<text>精选文字说明</text>
+</view>
+
+
+</view>
